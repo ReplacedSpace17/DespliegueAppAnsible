@@ -4,7 +4,7 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'Javier1234567890$',
-    database: 'glucontroldb'
+    database: 'dinamic_poblational_fish'
 });
 
 connection.connect((error) => {
@@ -33,13 +33,13 @@ USE dinamic_poblational_fish;
 CREATE TABLE `RegistrosSimulaciones` (
  `ID` INT NOT NULL AUTO_INCREMENT,
  `Especie` VARCHAR(50),
- `Generacion` INT(100),
- `Poblacion` INT(100),
- `Media` DOUBLE(100),
- `DesvEst` DOUBLE(100),
- `Mediana` DOUBLE(98),
- `PoblacionMinima` DOUBLE(98),
- `PoblacionMaxima` DOUBLE(98),
+ `Generacion` INT,
+ `Poblacion` INT,
+ `Media` DOUBLE,
+ `DesvEst` DOUBLE,
+ `Mediana` DOUBLE,
+ `PoblacionMinima` DOUBLE,
+ `PoblacionMaxima` DOUBLE,
  PRIMARY KEY (`ID`)
 );
 
